@@ -1,0 +1,45 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Differences:
+
+AlexNet and VGG: Classified Dog_01.jpg as Rhodesian Ridgeback.
+ResNet: Classified Dog_01.jpg as Irish Terrier.
+There is a discrepancy in breed classification among the models.
+
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: 
+Differences:
+
+AlexNet: Classified Dog_01.jpg as Rhodesian Ridgeback and Dog_02.jpg as Australian Terrier. Different breeds.
+VGG: Classified Dog_01.jpg as Rhodesian Ridgeback and Dog_02.jpg as Vizsla. Different breeds.
+ResNet: Misclassified Dog_02.jpg as Warthog (which is not a dog), while Dog_01.jpg was classified as Irish Terrier. Significant difference in classification.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer:
+Misclassifications:
+
+AlexNet: Misclassified Cattle_01.jpg as Water Buffalo and Coffee_mug_01.jpg as Eggnog.
+VGG: Misclassified Cattle_01.jpg as Water Buffalo and Coffee_mug_01.jpg as Eggnog.
+ResNet: Misclassified Cattle_01.jpg as Ox but correctly classified Coffee_mug_01.jpg as Coffee Mug.
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+Answer:
+
+Selected Model: ResNet
+
+Justification:
+
+Correct Classification of Non-Dogs: ResNet correctly classified Coffee_mug_01.jpg as Coffee Mug, whereas AlexNet and VGG incorrectly classified both.
+Correct Classification of Dogs: While ResNet had some issues with breed classification (Dog_01.jpg as Irish Terrier and Dog_02.jpg as Warthog), it was the only model to correctly identify Coffee_mug_01.jpg.
+Overall Performance: Despite some misclassifications, ResNet demonstrated a better balance of correct classifications and fewer incorrect results compared to AlexNet and VGG.
+Given that ResNet correctly identified one of the non-dog images, it was chosen as the model that performed best in terms of overall accuracy, particularly with non-dog images.
+
+
+
